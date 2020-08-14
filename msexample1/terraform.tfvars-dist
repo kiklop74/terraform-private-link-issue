@@ -1,0 +1,8 @@
+# -*- mode: hcl; coding: utf-8; -*-
+# vim: set syntax=hcl fileencoding=utf-8
+
+subscription_id         = ""
+client_id               = ""
+client_certificate_path = ""
+tenant_id               = ""
+location                = ""

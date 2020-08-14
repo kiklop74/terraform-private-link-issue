@@ -1,0 +1,30 @@
+
+random_string.random: Creating...
+random_string.random: Creation complete after 0s [id=n4gx6y]
+azurerm_resource_group.grp: Creating...
+azurerm_resource_group.grp: Creation complete after 1s [id=/subscriptions/afdfd00e-df41-442b-a3a6-0b5e92a65fc2/resourceGroups/PGSQLResourceGroup]
+azurerm_virtual_network.example: Creating...
+azurerm_postgresql_server.example: Creating...
+azurerm_virtual_network.example: Still creating... [10s elapsed]
+azurerm_postgresql_server.example: Still creating... [10s elapsed]
+azurerm_virtual_network.example: Creation complete after 11s [id=/subscriptions/afdfd00e-df41-442b-a3a6-0b5e92a65fc2/resourceGroups/PGSQLResourceGroup/providers/Microsoft.Network/virtualNetworks/n4gx6y-network]
+azurerm_subnet.example: Creating...
+azurerm_subnet.example: Creation complete after 1s [id=/subscriptions/afdfd00e-df41-442b-a3a6-0b5e92a65fc2/resourceGroups/PGSQLResourceGroup/providers/Microsoft.Network/virtualNetworks/n4gx6y-network/subnets/n4gx6y-subnet]
+azurerm_postgresql_server.example: Still creating... [20s elapsed]
+azurerm_postgresql_server.example: Still creating... [30s elapsed]
+azurerm_postgresql_server.example: Still creating... [40s elapsed]
+azurerm_postgresql_server.example: Still creating... [50s elapsed]
+azurerm_postgresql_server.example: Still creating... [1m0s elapsed]
+azurerm_postgresql_server.example: Still creating... [1m10s elapsed]
+azurerm_postgresql_server.example: Still creating... [1m20s elapsed]
+azurerm_postgresql_server.example: Still creating... [1m30s elapsed]
+azurerm_postgresql_server.example: Still creating... [1m40s elapsed]
+azurerm_postgresql_server.example: Still creating... [1m50s elapsed]
+azurerm_postgresql_server.example: Still creating... [2m0s elapsed]
+azurerm_postgresql_server.example: Creation complete after 2m4s [id=/subscriptions/afdfd00e-df41-442b-a3a6-0b5e92a65fc2/resourceGroups/PGSQLResourceGroup/providers/Microsoft.DBforPostgreSQL/servers/n4gx6y-pg]
+azurerm_private_endpoint.example: Creating...
+
+Error: creating Private Endpoint "n4gx6y-endpoint" (Resource Group "PGSQLResourceGroup"): network.PrivateEndpointsClient#CreateOrUpdate: Failure sending request: StatusCode=400 -- Original Error: Code="IncorrectPrivateLinkServiceConnectionGroupId" Message="Call to Microsoft.DBforPostgreSQL/servers failed. Error message: Private Link Service Connection Group Id is incorrect for Azure Database for PostgreSQL" Details=[]
+
+  on main.tf line 68, in resource "azurerm_private_endpoint" "example":
+  68: resource "azurerm_private_endpoint" "example" {

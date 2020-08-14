@@ -1,0 +1,30 @@
+# Terraform
+.terraform
+.terragrunt-cache
+*.tfstate*
+
+# Secrets are not allowed in general
+*.key
+*.pem
+.env
+terraform.tfvars
+
+# Secrets are encrypted using git-crypt
+!files/secrets/*/*
+
+# OS X
+.history
+.DS_Store
+
+# IntelliJ
+.idea_modules
+*.iml
+*.iws
+*.ipr
+.idea/
+build/
+*/build/
+out/
+
+.aws/
+.*.swp
